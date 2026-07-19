@@ -1,0 +1,5 @@
+# mailer/ uses the Python standard library only (smtplib, email, csv,
+# secrets, ssl). No third-party packages are required to send a campaign.
+#
+# Run it with the same interpreter/venv used for the tracker:
+#   python mailer/send_campaign.py mailer/recipients.example.csv --dry-run

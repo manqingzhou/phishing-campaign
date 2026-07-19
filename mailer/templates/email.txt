@@ -1,0 +1,13 @@
+Account verification required
+
+Hello,
+
+We noticed a sign-in that needs to be confirmed for $email.
+Please verify your account to keep it active by opening the link below:
+
+    $link
+
+If you did not expect this message you can ignore it.
+
+--
+This message was sent as part of an authorized security-awareness exercise.

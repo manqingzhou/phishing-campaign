@@ -1,0 +1,48 @@
+<!--
+  Campaign email (HTML body).
+  Placeholders are substituted with string.Template:
+    $link   full tracking URL (http://localhost:8084/?email=...&token=...)
+    $email  recipient email address
+  Edit freely — this file is loaded at send time, no code changes needed.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body style="margin:0;padding:0;background:#f4f4f7;font-family:Arial,Helvetica,sans-serif;color:#333;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f7;padding:24px 0;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:8px;overflow:hidden;">
+            <tr>
+              <td style="padding:32px 40px;">
+                <h1 style="margin:0 0 16px;font-size:20px;color:#1a1a1a;">Account verification required</h1>
+                <p style="margin:0 0 16px;font-size:15px;line-height:1.5;">Hello,</p>
+                <p style="margin:0 0 24px;font-size:15px;line-height:1.5;">
+                  We noticed a sign-in that needs to be confirmed for
+                  <strong>$email</strong>. Please verify your account to keep it active.
+                </p>
+                <p style="margin:0 0 28px;">
+                  <a href="$link"
+                     style="display:inline-block;padding:12px 28px;background:#2563eb;color:#ffffff;text-decoration:none;border-radius:6px;font-size:15px;">
+                    Verify my account
+                  </a>
+                </p>
+                <p style="margin:0 0 8px;font-size:13px;color:#666;line-height:1.5;">
+                  If the button does not work, copy and paste this link into your browser:
+                </p>
+                <p style="margin:0 0 24px;font-size:13px;color:#2563eb;word-break:break-all;">$link</p>
+                <hr style="border:none;border-top:1px solid #eee;margin:24px 0;" />
+                <p style="margin:0;font-size:12px;color:#999;line-height:1.5;">
+                  This message was sent as part of an authorized security-awareness exercise.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local SQLite artifacts
+*.db
+*.db-wal
+*.db-shm
+
+# Secrets / generated
+.env
+campaign_links.csv
+mailer/sent_log.csv
+nginx/logs/
+tracker/data/
+
+# IDE / tool local config
+.DS_Store
+.idea/
+.vscode/
+.claude/
+
+# Office / LibreOffice lock files (auto-created when .docx is open)
+.~lock.*
+.~*.docx
+~$*.docx
+*.tmp
+CLAUDE.md

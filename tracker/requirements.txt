@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+jinja2
+pydantic
+email-validator
+
+# dev / test dependencies
+pytest
+httpx
